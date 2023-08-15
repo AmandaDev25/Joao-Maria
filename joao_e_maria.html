@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Joao e Maria</title>
+</head>
+
+<tbody>
+<script>
+maximo = 5
+n = parseInt(Math.random()*maximo+1)
+tabela = '<table border=1>'
+tabela +='<tr>'
+tabela +='<td>Numero Sorteado: </td>'
+tabela +='<td>'+n+'</td>'
+tabela +='</tr>'
+tabela +='</table><br><br>'
+document.write(tabela)
+asteriscos = ''
+for(i=1;i<=n;i++){
+	asteriscos +='*'
+}
+
+plural = (n>1)?'s':''
+
+document.write('Fruta '+asteriscos+' ('+n+') fruta'+plural+'!<br><br>')
+if (n==5){
+document.write('Numero 5 foi sorteado!!!')
+}
+
+</script></tbody>
+</html>
